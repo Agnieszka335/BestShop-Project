@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "no-empty": "error",
+    "no-var": "error",
+    "semi": "error",
+    "no-console": "off",
+    "quotes": "off",
+    "no-return-assign": "error",
+    "semi-spacing": "error",
+    "space-infix-ops": "error",
+    "no-constant-condition": "off"
+  }
+}
