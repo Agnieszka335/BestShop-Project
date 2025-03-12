@@ -19,11 +19,23 @@
     padding: 57px;
     padding-bottom: 30px;
     margin-top: 40px;
+
+    @media screen and (max-width: 1000px) {
+    font-size: 35px;
+    
+    }
+
+
   }
   .banner-text {
     font-size: 16px;
     text-align: center;
+
+    @media screen and (max-width: 1000px) {
+      margin: 0 60px;    
+    }
   }
+
   .banner-btn {
     margin: 38px;
     text-align: center;
@@ -35,6 +47,11 @@
     padding: 22px 157px;
     max-width: 440px;
     font-weight: bold;
+
+    @media screen and (max-width: 1000px) {
+   width: 100%;
+   padding: 27px 50px;
+    }
   }
   .banner-btn:hover {
     box-shadow: 3px 3px 5px #0790da81;
