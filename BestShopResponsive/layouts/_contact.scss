@@ -1,109 +1,121 @@
 .contact .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .contact_elements {
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .questions img {
-    width: 27px;
-    margin: 5px 0px;
-  }
-  .questions h6 {
-    font-family: var(--secondary-font);
-    font-size: 49px;
-  }
-  .questions p {
-    font-size: 16px;
-    padding: 22px 0;
-  }
-  .questions span {
-    font: normal normal 600 16px/22px;
-    color: var(--color-grey);
-    gap: 10px;
-  }
-  .questions {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .contact_form {
-    margin-top: 10px;
-    padding: 0 70px;
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    transform: translateY(90px);
-  }
-  .label {
-    font-size: 11px;
-    color: var(--color-blue);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 10px 0;
-  }
-  input[type="text"],
-  input[type="e-mail"] {
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid var(--color-grey);
-    padding: 10px;
-    margin: 0px 0;
-  }
-  
-  button[type="submit"] {
-    color: var(--color-white);
-    font-weight: bold;
-    font-size: 13px;
-    box-shadow: 5px 10px 14px #07ace629;
-    background-color: var(--color-blue);
-    border: 0;
-    border-radius: 35px;
-    padding: 20px 97px;
-    align-self: flex-end;
-  }
-  button[type="submit"]:hover {
-    background-color: rgba(0, 157, 255, 0.6);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  /* checkbox */
+.contact_elements {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+.questions img {
+  width: 27px;
+  margin: 5px 0px;
+}
+.questions h6 {
+  font-family: var(--secondary-font);
+  font-size: 49px;
+}
+.questions p {
+  font-size: 16px;
+  padding: 22px 0;
+}
+.questions span {
+  font: normal normal 600 16px/22px;
+  color: var(--color-grey);
+  gap: 10px;
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: 80px;
+  }
+}
+.contact_form {
+  margin-top: 10px;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  transform: translateY(90px);
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 22px;
+  }
+}
+.label {
+  font-size: 11px;
+  color: var(--color-blue);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+input[type="text"],
+input[type="e-mail"] {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--color-grey);
+  padding: 10px;
+  margin: 0px 0;
+}
+
+button[type="submit"] {
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 5px 10px 14px #07ace629;
+  background-color: var(--color-blue);
+  border: 0;
+  border-radius: 35px;
+  padding: 20px 97px;
+  align-self: flex-end;
+}
+button[type="submit"]:hover {
+  background-color: rgba(0, 157, 255, 0.6);
+}
+
+/* checkbox */
 
 .checkbox {
-    padding: 25px;
-    margin: 10px 0;
-    font-size: 12px;
-    color: #707070;
-    display: flex;
-    cursor: pointer;
-    align-items: flex-start;
-    transform: translateX(-20px);
-  }
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  .checkbox span {
-    height: 22px;
-    flex-shrink: 0;
-    flex-basis: 22px;
-    border: 1px solid #95989a;
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 4px;
-  }
-  .checkbox input:checked + span {
-    background-image: url("../assets/Checkmark.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  padding: 25px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #707070;
+  display: flex;
+  cursor: pointer;
+  align-items: flex-start;
+  transform: translateX(-20px);
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox span {
+  height: 22px;
+  flex-shrink: 0;
+  flex-basis: 22px;
+  border: 1px solid #95989a;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.checkbox input:checked + span {
+  background-image: url("../assets/Checkmark.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

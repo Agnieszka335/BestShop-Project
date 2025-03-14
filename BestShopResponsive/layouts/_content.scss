@@ -5,6 +5,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 1000px) {
+   padding-left: 30px;
+   padding-right: 30px;
+  }
 }
 
 /*first box */
@@ -17,6 +22,11 @@
 .first_box-text {
   font-size: 16px;
   padding: 22px;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+
+  }
 }
 .first_box-text::after {
   content: "";
@@ -50,7 +60,7 @@
 
   @media screen and (max-width: 1000px) {
     left: 80px;
-    top: 10px;
+    top: -20px;
     width: 130px;
     height: 130px;
     z-index: 0;
@@ -65,7 +75,7 @@
 
   @media screen and (max-width: 1000px) {
     width: 200px;
-    transform: translate(70px, 70px);
+    transform: translate(90px, 40px);
   }
 }
 .first_box {
@@ -84,9 +94,14 @@
     width: 100%;
     height: 100%;
     align-items: center;
+    padding: 0 20px;
   }
 }
-
+@media screen and (max-width: 1000px) {
+.first_box-picture {
+  margin-top: -50px;
+}
+}
 /* drugi box */
 
 .second_box-2 {
@@ -99,6 +114,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding: 20px 20px;
   }
 }
 .iPhone {
@@ -108,6 +124,14 @@
   z-index: 1;
   top: 40px;
   left: 20px;
+
+  @media screen and (max-width: 1000px) {
+width: 175px;
+height: 135px;
+top: 130px;
+left: 10px;
+  }
+
 }
 .second_box-text::after {
   content: "";
@@ -124,6 +148,15 @@
 }
 .second_box-paragraph {
   margin: 50px 15px 0 250px;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .second_box-header {
   font-family: var(--secondary-font);
@@ -133,6 +166,13 @@
 .second_box-text {
   font-size: 16px;
   padding: 22px;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+   
+  }
+
+
 }
 .second_box_element {
   background-color: var(--color-blue);
@@ -142,6 +182,20 @@
   position: relative;
   bottom: 310px;
   left: 30px;
+
+  @media screen and (max-width: 1000px) {
+    width: 131px;
+    height: 131px;
+    top: -20px;
+    left: 0;
+      }
+}
+
+.second_box-picture {
+  @media screen and (max-width: 1000px) {
+    margin-top: -70px;
+    padding: 0;
+  }
 }
 
 /*trzeci box*/
@@ -157,6 +211,8 @@
   @media screen and (max-width: 1000px) {
     width: 100%;
     align-items: center;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 .third_box-text::after {
@@ -180,6 +236,7 @@
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     width: 100%;
+    
   }
 }
 .trumpet {
@@ -195,6 +252,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 45px;
+  }
 }
 .third_box-paragraph {
   margin: 70px 35px;
