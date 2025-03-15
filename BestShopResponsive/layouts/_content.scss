@@ -7,8 +7,8 @@
   flex-direction: column;
 
   @media screen and (max-width: 1000px) {
-   padding-left: 30px;
-   padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -25,7 +25,6 @@
 
   @media screen and (max-width: 1000px) {
     width: 100%;
-
   }
 }
 .first_box-text::after {
@@ -98,9 +97,9 @@
   }
 }
 @media screen and (max-width: 1000px) {
-.first_box-picture {
-  margin-top: -50px;
-}
+  .first_box-picture {
+    margin-top: -50px;
+  }
 }
 /* drugi box */
 
@@ -126,12 +125,11 @@
   left: 20px;
 
   @media screen and (max-width: 1000px) {
-width: 175px;
-height: 135px;
-top: 130px;
-left: 10px;
+    width: 175px;
+    height: 135px;
+    top: 130px;
+    left: 10px;
   }
-
 }
 .second_box-text::after {
   content: "";
@@ -168,11 +166,11 @@ left: 10px;
   padding: 22px;
 
   @media screen and (max-width: 1000px) {
-    width: 100%;
-   
+    width: 70%;
   }
-
-
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
 }
 .second_box_element {
   background-color: var(--color-blue);
@@ -188,7 +186,7 @@ left: 10px;
     height: 131px;
     top: -20px;
     left: 0;
-      }
+  }
 }
 
 .second_box-picture {
@@ -211,6 +209,8 @@ left: 10px;
   @media screen and (max-width: 1000px) {
     width: 100%;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     padding-top: 0;
     margin-bottom: 0;
   }
@@ -236,7 +236,6 @@ left: 10px;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     width: 100%;
-    
   }
 }
 .trumpet {
@@ -261,6 +260,14 @@ left: 10px;
 }
 .third_box-paragraph {
   margin: 70px 35px;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .third_box-header {
   font-family: var(--secondary-font);
@@ -270,4 +277,12 @@ left: 10px;
 .third_box-text {
   font-size: 16px;
   padding: 22px;
+
+  @media screen and (max-width: 1000px) {
+    width: 60%;
+    padding: 15px;
+  }
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
 }

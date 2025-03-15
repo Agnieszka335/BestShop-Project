@@ -12,7 +12,7 @@
 }
 .elements_container_third {
   @media screen and (max-width: 1000px) {
-    transform: translate(-30px, -90px);
+    transform: translate(0px, -90px);
   }
 }
 .price_content {
@@ -76,32 +76,31 @@
   color: #13253b;
   padding-top: 34px;
 }
-.pricing_box_one span {
-  color: var(--color-red);
+
+.pricing_box_one span,
+.pricing_box_two span,
+.pricing_box_three span {
   font-size: 46px;
   font-weight: lighter;
-  text-align: center;
   display: inline-block;
   transform: translateY(20px);
+}
+.pricing_box_one span {
+  color: var(--color-red);
+  text-align: center;
   margin-bottom: 95px;
 }
 .pricing_box_two span {
   color: var(--color-blue);
-  font-size: 46px;
-  font-weight: lighter;
-  display: inline-block;
-  transform: translateY(20px);
 }
 .pricing_box_three span {
   color: var(--color-green);
-  font-size: 46px;
-  font-weight: lighter;
-  display: inline-block;
-  transform: translateY(20px);
 }
 .limited {
   transform: translateY(50px);
-  font: normal normal bold 12px/1px Raleway;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 12px;
 }
 
 .pricing_box_one {
@@ -148,13 +147,19 @@
     width: 80vw;
   }
 }
-.pricing-btn-1 {
+
+.pricing-btn-1,
+.pricing-btn-2,
+.pricing-btn-3 {
   font-weight: bold;
   color: var(--color-white);
   background-color: var(--color-red);
   border-radius: 23px;
   border: 0;
   padding: 16px 57px;
+}
+
+.pricing-btn-1 {
   transform: translateY(45px);
 
   @media screen and (max-width: 1000px) {
@@ -162,32 +167,23 @@
   }
 }
 .pricing-btn-2 {
-  font-weight: bold;
-  color: var(--color-white);
   background-color: var(--color-blue);
-  border-radius: 23px;
-  border: 0;
-  padding: 16px 57px;
   box-shadow: 5px 10px 14px #07ace629;
-  transform: translateY(150px);
+  transform: translateY(130px);
 
   @media screen and (max-width: 1000px) {
     transform: translateY(5px);
   }
 }
 .pricing-btn-3 {
-  font-weight: bold;
-  color: var(--color-white);
   background-color: var(--color-green);
-  border-radius: 23px;
-  border: 0;
-  padding: 16px 57px;
-  transform: translateY(140px);
+  transform: translateY(130px);
 
   @media screen and (max-width: 1000px) {
     transform: translateY(10px);
   }
 }
+
 .pricing-btn-1:hover,
 .pricing-btn-2:hover,
 .pricing-btn-3:hover {
