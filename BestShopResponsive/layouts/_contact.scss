@@ -21,7 +21,7 @@
   margin: 5px 0px;
 }
 .questions h6 {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-size: 49px;
 }
 .questions p {
@@ -30,7 +30,7 @@
 }
 .questions span {
   font: normal normal 600 16px/22px;
-  color: var(--color-grey);
+  color: $color-grey;
   gap: 10px;
 }
 .questions {
@@ -56,7 +56,7 @@
 }
 .label {
   font-size: 11px;
-  color: var(--color-blue);
+  color: $color-blue;
   font-weight: bold;
   text-transform: uppercase;
   margin: 10px 0;
@@ -65,17 +65,17 @@ input[type="text"],
 input[type="e-mail"] {
   width: 100%;
   border: 0;
-  border-bottom: 2px solid var(--color-grey);
+  border-bottom: 2px solid $color-grey;
   padding: 10px;
   margin: 0px 0;
 }
 
 button[type="submit"] {
-  color: var(--color-white);
+  color: $color-white;
   font-weight: bold;
   font-size: 13px;
   box-shadow: 5px 10px 14px #07ace629;
-  background-color: var(--color-blue);
+  background-color: $color-blue;
   border: 0;
   border-radius: 35px;
   padding: 20px 97px;
@@ -118,4 +118,12 @@ button[type="submit"]:hover {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.mail {
+
+  @media screen and (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }

@@ -1,6 +1,6 @@
 .popularity-title {
   font-size: 36px;
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   padding: 42px;
   text-align: center;
   margin: 100px 0;
@@ -12,7 +12,7 @@
 .circle_one {
   width: 62px;
   height: 62px;
-  background-color: var(--color-red);
+  background-color: $color-red;
   border-radius: 50%;
 }
 .circle_one img {
@@ -23,7 +23,7 @@
 .circle_two {
   width: 62px;
   height: 62px;
-  background-color: var(--color-blue);
+  background-color: $color-blue;
   border-radius: 50%;
 }
 .circle_two img {
@@ -34,7 +34,7 @@
 .circle_three {
   width: 62px;
   height: 62px;
-  background-color: var(--color-green);
+  background-color: $color-green;
   border-radius: 50%;
 }
 .circle_three img {
@@ -43,15 +43,15 @@
   top: 7px;
 }
 .popularity span {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 5.96px;
   text-align: center;
 }
 .popularity p {
-  color: var(--color-grey);
-  font-family: var(--secondary-font);
+  color: $color-grey;
+  font-family: $secondary-font;
   font-size: 17px;
   max-width: 120px;
   text-align: center;

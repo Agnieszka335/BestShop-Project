@@ -13,7 +13,7 @@
     align-items: center;
   }
   .banner-title {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-size: 49px;
     text-align: center;
     padding: 57px;
@@ -22,10 +22,7 @@
 
     @media screen and (max-width: 1000px) {
     font-size: 35px;
-    
     }
-
-
   }
   .banner-text {
     font-size: 16px;
@@ -39,8 +36,8 @@
   .banner-btn {
     margin: 38px;
     text-align: center;
-    color: var(--color-white);
-    background-color: var(--color-blue);
+    color: $color-white;
+    background-color: $color-blue;
     border: 0;
     box-shadow: 5px 10px 14px #07ace629;
     border-radius: 40px;
