@@ -32,6 +32,7 @@
   font: normal normal 600 16px/22px;
   color: $color-grey;
   gap: 10px;
+ 
 }
 .questions {
   display: flex;
@@ -40,6 +41,7 @@
 
   @media screen and (max-width: 1000px) {
     margin-top: 80px;
+    margin-bottom: 0;
   }
 }
 .contact_form {
@@ -52,6 +54,7 @@
 
   @media screen and (max-width: 1000px) {
     padding: 0 22px;
+    margin: 0;
   }
 }
 .label {
@@ -118,12 +121,4 @@ button[type="submit"]:hover {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.mail {
-
-  @media screen and (max-width: 400px) {
-    display: flex;
-    flex-direction: column;
-    
-  }
 }

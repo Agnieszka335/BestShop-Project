@@ -18,3 +18,8 @@
     font-family: $main-font;
   }
 
+  @mixin tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }

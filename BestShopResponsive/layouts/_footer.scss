@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1000px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
   .footer {
     background-color: $color-light-grey;
