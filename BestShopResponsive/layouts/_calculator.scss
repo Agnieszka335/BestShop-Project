@@ -76,6 +76,7 @@
       }
     }
 
+
     .select__dropdown {
       display: none;
       position: absolute;
@@ -117,6 +118,25 @@
 
     span {
       padding: 0;
+      height: 22px;
+      flex-shrink: 0;
+      flex-basis: 22px;
+      border: 1px solid #95989a;
+      cursor: pointer;
+      border-radius: 4px;
+      margin: 0px 0px 0 20px;
+    }
+    #accounting,
+    #terminal {
+      color: #707070;
+      display: flex;
+      cursor: pointer;
+      align-items: flex-start;
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
     }
   }
   .form__checkbox {
@@ -125,10 +145,23 @@
     }
   }
 
+  #accounting:checked + span,
+  #terminal:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-color: $color-white;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  //wow checkboxy
+
   &__summary {
     width: 50%;
+    height: 100%;
     margin-left: 20px;
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
 
     @include tablet {
@@ -139,6 +172,7 @@
 
     .summary__total,
     .list__item {
+      display: flex;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
       border-radius: 6px;
       justify-content: space-between;
@@ -149,12 +183,14 @@
 
       &.open {
         display: flex;
+       
       }
     }
 
     .summary__total {
       width: 50%;
       align-self: flex-end;
+      justify-content: space-between;
       margin-top: 22px;
       padding: 8px 20px;
       background-color: $color-blue;
@@ -169,11 +205,13 @@
       padding: 6px 20px;
       background-color: $color-green;
       margin-bottom: 8px;
+      justify-content: space-between;
 
       .item {
         &__price {
           font-weight: 700;
           font-size: 1.125rem;
+          justify-content: space-between;
         }
       }
     }
