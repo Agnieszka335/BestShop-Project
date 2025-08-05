@@ -31,4 +31,4 @@ Follow these instructions to set up and run the project locally with **Vite**.
 3. Run the developer server `npm run dev`
 
 ## Screenshots
-[BestShop](./BestShopResponsive/assets/screenshot1.jpg)
+![BestShop](./BestShopResponsive/assets/screenshot1.jpg)
