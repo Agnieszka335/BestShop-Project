@@ -30,5 +30,5 @@ Follow these instructions to set up and run the project locally with **Vite**.
 2. Install dependencies, make sure you have Node.js installed
 3. Run the developer server `npm run dev`
 
-## Screenshots
+## Full-page screenshot 
 ![BestShop](./BestShopResponsive/assets/screenshot1.jpg)
