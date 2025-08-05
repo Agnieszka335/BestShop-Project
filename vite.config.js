@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 /**
  * Path to exercise folder
  */
-const exercisePath = "BestShopResponsive"; //vite obsługuje ścieżke root czyli główną//
+const exercisePath = "BestShopResponsive"; 
 
 /**
  * Don't change those lines below
