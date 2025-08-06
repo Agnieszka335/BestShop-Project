@@ -15,7 +15,7 @@ BestShop is a modern, responsive e-commerce landing page featuring a real-time *
 - [Vite](https://vitejs.dev/)
 
 ## Live Preview
---link--
+[BestShop Live Demo](https://bestshop-website.netlify.app/)
 
 ## 🧮 Pricing Calculator 
 The JavaScript-based Pricing Calculator allows users to:
